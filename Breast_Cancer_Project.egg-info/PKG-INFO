@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Breast_Cancer_Project
+Version: 0.0.1
+Summary: A package for predicting breast cancer outcomes
+Author: Ankit Kumar
+Author-email: ankitkumar875740@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: jupyter
+Requires-Dist: pymongo
+Requires-Dist: flask
+Requires-Dist: gunicorn
