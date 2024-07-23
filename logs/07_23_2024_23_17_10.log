@@ -1,0 +1,10 @@
+[ 2024-07-23 23:17:10,346 ] 19 root - INFO - Logger initialized successfully
+[ 2024-07-23 23:17:10,346 ] 52 root - INFO - Data Ingestion process starts
+[ 2024-07-23 23:17:10,347 ] 28 root - INFO - Connecting to MongoDB
+[ 2024-07-23 23:17:10,709 ] 34 root - INFO - Querying data from Breast_Cancer_Data
+[ 2024-07-23 23:17:12,428 ] 39 root - INFO - Closing MongoDB connection
+[ 2024-07-23 23:17:12,463 ] 55 root - INFO - Data loaded into DataFrame
+[ 2024-07-23 23:17:12,477 ] 59 root - INFO - Data saved to artifacts\raw.csv
+[ 2024-07-23 23:17:12,478 ] 60 root - INFO - Train test split
+[ 2024-07-23 23:17:12,498 ] 66 root - INFO - Ingestion of data is completed
+[ 2024-07-23 23:17:12,498 ] 89 root - INFO - Data ingestion completed. Raw data saved at: ('artifacts\\train.csv', 'artifacts\\test.csv')

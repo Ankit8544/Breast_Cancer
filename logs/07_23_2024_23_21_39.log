@@ -1,0 +1,5 @@
+[ 2024-07-23 23:21:39,125 ] 19 root - INFO - Logger initialized successfully
+[ 2024-07-23 23:21:39,332 ] 148 numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2024-07-23 23:21:39,332 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-07-23 23:21:39,976 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-23 23:21:39,978 ] 224 werkzeug - INFO -  * Debugger PIN: 931-841-565

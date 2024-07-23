@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: #333;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            text-align: center;
+        }
+        h2.error {
+            color: red;
+        }
+        .section-title {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Prediction Form</h1>
+        <form action="/predict" method="post">
+            <div class="section">
+                <div class="section-title">Mean Measurements</div>
+                <label for="mean_radius">Mean Radius:</label>
+                <input type="text" id="mean_radius" name="mean_radius" required>
+                <br>
+                <label for="mean_texture">Mean Texture:</label>
+                <input type="text" id="mean_texture" name="mean_texture" required>
+                <br>
+                <label for="mean_perimeter">Mean Perimeter:</label>
+                <input type="text" id="mean_perimeter" name="mean_perimeter" required>
+                <br>
+                <label for="mean_area">Mean Area:</label>
+                <input type="text" id="mean_area" name="mean_area" required>
+                <br>
+                <label for="mean_smoothness">Mean Smoothness:</label>
+                <input type="text" id="mean_smoothness" name="mean_smoothness" required>
+                <br>
+                <label for="mean_compactness">Mean Compactness:</label>
+                <input type="text" id="mean_compactness" name="mean_compactness" required>
+                <br>
+                <label for="mean_concavity">Mean Concavity:</label>
+                <input type="text" id="mean_concavity" name="mean_concavity" required>
+                <br>
+                <label for="mean_concave_points">Mean Concave Points:</label>
+                <input type="text" id="mean_concave_points" name="mean_concave_points" required>
+                <br>
+                <label for="mean_symmetry">Mean Symmetry:</label>
+                <input type="text" id="mean_symmetry" name="mean_symmetry" required>
+                <br>
+                <label for="mean_fractal_dimension">Mean Fractal Dimension:</label>
+                <input type="text" id="mean_fractal_dimension" name="mean_fractal_dimension" required>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Error Measurements</div>
+                <label for="radius_error">Radius Error:</label>
+                <input type="text" id="radius_error" name="radius_error" required>
+                <br>
+                <label for="texture_error">Texture Error:</label>
+                <input type="text" id="texture_error" name="texture_error" required>
+                <br>
+                <label for="perimeter_error">Perimeter Error:</label>
+                <input type="text" id="perimeter_error" name="perimeter_error" required>
+                <br>
+                <label for="area_error">Area Error:</label>
+                <input type="text" id="area_error" name="area_error" required>
+                <br>
+                <label for="smoothness_error">Smoothness Error:</label>
+                <input type="text" id="smoothness_error" name="smoothness_error" required>
+                <br>
+                <label for="compactness_error">Compactness Error:</label>
+                <input type="text" id="compactness_error" name="compactness_error" required>
+                <br>
+                <label for="concavity_error">Concavity Error:</label>
+                <input type="text" id="concavity_error" name="concavity_error" required>
+                <br>
+                <label for="concave_points_error">Concave Points Error:</label>
+                <input type="text" id="concave_points_error" name="concave_points_error" required>
+                <br>
+                <label for="symmetry_error">Symmetry Error:</label>
+                <input type="text" id="symmetry_error" name="symmetry_error" required>
+                <br>
+                <label for="fractal_dimension_error">Fractal Dimension Error:</label>
+                <input type="text" id="fractal_dimension_error" name="fractal_dimension_error" required>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Worst Measurements</div>
+                <label for="worst_radius">Worst Radius:</label>
+                <input type="text" id="worst_radius" name="worst_radius" required>
+                <br>
+                <label for="worst_texture">Worst Texture:</label>
+                <input type="text" id="worst_texture" name="worst_texture" required>
+                <br>
+                <label for="worst_perimeter">Worst Perimeter:</label>
+                <input type="text" id="worst_perimeter" name="worst_perimeter" required>
+                <br>
+                <label for="worst_area">Worst Area:</label>
+                <input type="text" id="worst_area" name="worst_area" required>
+                <br>
+                <label for="worst_smoothness">Worst Smoothness:</label>
+                <input type="text" id="worst_smoothness" name="worst_smoothness" required>
+                <br>
+                <label for="worst_compactness">Worst Compactness:</label>
+                <input type="text" id="worst_compactness" name="worst_compactness" required>
+                <br>
+                <label for="worst_concavity">Worst Concavity:</label>
+                <input type="text" id="worst_concavity" name="worst_concavity" required>
+                <br>
+                <label for="worst_concave_points">Worst Concave Points:</label>
+                <input type="text" id="worst_concave_points" name="worst_concave_points" required>
+                <br>
+                <label for="worst_symmetry">Worst Symmetry:</label>
+                <input type="text" id="worst_symmetry" name="worst_symmetry" required>
+                <br>
+                <label for="worst_fractal_dimension">Worst Fractal Dimension:</label>
+                <input type="text" id="worst_fractal_dimension" name="worst_fractal_dimension" required>
+            </div>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if final_result %}
+        <h2>Prediction Result: {{ final_result }}</h2>
+        {% endif %}
+
+        {% if error %}
+        <h2 class="error">Error: {{ error }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+[ 2024-07-23 23:40:37,320 ] 19 root - INFO - Logger initialized successfully
+[ 2024-07-23 23:40:37,492 ] 148 numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2024-07-23 23:40:37,492 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-07-23 23:40:38,232 ] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-07-23 23:40:38,232 ] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-07-23 23:40:48,597 ] 224 werkzeug - INFO - 127.0.0.1 - - [23/Jul/2024 23:40:48] "GET / HTTP/1.1" 200 -
+[ 2024-07-23 23:40:53,869 ] 224 werkzeug - INFO - 127.0.0.1 - - [23/Jul/2024 23:40:53] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-23 23:45:35,845 ] 130 root - INFO - DataFrame created successfully
+[ 2024-07-23 23:45:35,966 ] 224 werkzeug - INFO - 127.0.0.1 - - [23/Jul/2024 23:45:35] "POST /predict HTTP/1.1" 200 -
