@@ -12,6 +12,4 @@ The dataset used in this project consists of 569 entries and 31 columns, contain
 - **Worst-case Measurements**: worst radius, worst texture, worst perimeter, etc.
 - **Target**: 0 (benign) or 1 (malignant)
 
-## Project Structure
-The project is organized into the following directories and files:
 
